@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: flex-start; /* Align items to the top */
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 16px;
+}
+
+.header {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #000000;
+    text-align: center; /* Center text within header */
+}
+
+.error-message {
+    color: #ff0000;
+    margin-bottom: 16px;
+    font-size: 1.125rem;
+    text-align: center; /* Center text within error message */
+}
+
+.results-container {
+    width: 100%;
+    max-width: 800px; /* Optional: Set a maximum width for better appearance */
+}
+
+.result-item {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items horizontally within result item */
+    margin-bottom: 16px;
+}
+
+.result-image {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 16px; /* Adjust margin to place button closer to the image */
+}
+
+.result-button {
+    display: inline-block; /* Ensure button size fits content */
+    font-size: 1.25rem;
+    font-weight: normal;
+    color: #1d4ed8;
+    text-decoration: none;
+    width: auto; /* Allow width to adjust to text size */
+    padding: 8px 16px; /* Add padding for better appearance */
+    margin-left: 16px; /* Space between image and button */
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-align: center; /* Center text within button */
+}
+
+.no-results {
+    font-size: 1.125rem;
+    color: #4b5563;
+    text-align: center; /* Center text within no-results message */
+}

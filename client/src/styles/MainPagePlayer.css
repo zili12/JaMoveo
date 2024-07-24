@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7fafc; /* Tailwind's bg-gray-100 */
+  }
+  
+  .title {
+    font-size: 2.5rem; /* Tailwind's text-4xl */
+    font-weight: bold;
+    margin-bottom: 2rem; /* Tailwind's mb-8 */
+    color: #3182ce; /* Tailwind's text-blue-600 */
+  }
+  
+  .welcome-message {
+    font-size: 1.5rem; /* Tailwind's text-2xl */
+    font-weight: 600; /* Tailwind's font-semibold */
+    color: #4a5568; /* Tailwind's text-gray-700 */
+  }
+  
+  /* Optional: Add styles for responsiveness */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem; /* Slightly smaller for mobile */
+    }
+  
+    .welcome-message {
+      font-size: 1.25rem; /* Slightly smaller for mobile */
+    }
+  }
+  

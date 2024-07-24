@@ -1,0 +1,111 @@
+/* General styling for the signup page */
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: url('../asserts/inst.gif') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.app-title {
+  font-size: 72px; /* Large title size */
+  font-weight: bold;
+  color: #007bff; /* Blue color */
+  text-align: center;
+  margin-bottom: 40px; /* Space between title and container */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+}
+
+.signup-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1; /* Ensure container is above background */
+}
+
+.signup-container h2 {
+  margin-top: 0; /* Remove any top margin */
+  margin-bottom: 20px; /* Adjust the space below the title */
+  color: #333;
+  font-size: 32px;
+}
+
+.signup-container .error {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-container form div {
+  margin-bottom: 20px; /* Increased space for better readability */
+}
+
+.signup-container form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.signup-container form input,
+.signup-container form select {
+  width: 100%;
+  padding: 12px; /* Increased padding for better touch targets */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.signup-container form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px; /* Larger font size for better readability */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.signup-container form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 36px; /* Adjust size for smaller screens */
+    margin-bottom: 30px; /* Adjust space between title and container */
+  }
+
+  .signup-container {
+    padding: 20px;
+  }
+
+  .signup-container h2 {
+    font-size: 24px;
+  }
+
+  .signup-container form input,
+  .signup-container form select {
+    padding: 10px;
+  }
+
+  .signup-container form button {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
